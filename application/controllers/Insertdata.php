@@ -22,8 +22,12 @@ class Insertdata extends CI_Controller {
 			$device_sn = strip_tags($this->input->post('sn'));
 			$temp = strip_tags($this->input->post('temp'));
 			$hum = strip_tags($this->input->post('hum'));
+			$status_a = strip_tags($this->input->post('status_a')); // Armar Sistema
+			$status_b = strip_tags($this->input->post('status_b')); // Para notificacion de emergencia
+			$status_c = strip_tags($this->input->post('status_c')); // Modo silencio
 
-			$result = $this->Insertdata_model->insert($device_sn, $temp, $hum);
+
+			$result = $this->Insertdata_model->insert($device_sn, $temp, $hum, $status_a, $status_b, $status_c);
 
 		}else{
 			//si la clave no coincide...

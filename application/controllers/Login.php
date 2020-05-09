@@ -26,7 +26,7 @@ class Login extends CI_Controller {
 
 		//si la clave coincide
 		 if ($return==1) {
-				 redirect(base_url('main'), 'refresh');
+				 redirect(base_url('main'), 'refresh'); 
 		 }
 
 		 if ($return==0) {

@@ -12,7 +12,7 @@ class Getdata extends CI_Controller {
 	}
 
 
-  public function gettopics(){
+  public function gettopics(){   
 
 		//recibimos la pass para obtener datos que nos pasa el dispo
     $password = strip_tags($this->input->post('gdp'));

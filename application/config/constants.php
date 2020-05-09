@@ -6,7 +6,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 defined('GET_DATA_PASSWORD') OR define('GET_DATA_PASSWORD', '223344');
 
 //esta es la pass que enviará tu dispositivo para poder insertar datos en la tabla data.
-defined('INSERT_DATA_PASSWORD') OR define('INSERT_DATA_PASSWORD', '8I(W-2B!QvDOWNs5');
+defined('INSERT_DATA_PASSWORD') OR define('INSERT_DATA_PASSWORD', '121212');
 
 //credenciales MQTT que obtendras del nodo creado en IoTicos.org
 defined('MQTT_USER') OR define('MQTT_USER', 'Ge6h4aRb9jbENfW');
