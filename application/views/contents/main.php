@@ -15,14 +15,15 @@
               <li class="mdl-list__item">
                 <span class="mdl-list__item-primary-content list__item-text">Armar Sistema</span>
                 <span class="mdl-list__item-secondary-content">
-
-
                   <!-- SWITCH-->
                   <label class="switch">
                     <input onchange="sw1_change()" type="checkbox" id="display_sw1" class="actua">
                     <span class="slider round"></span>
                   </label>
+                </span>
 
+                <span class="mdl-list__item-secondary-content">
+                  <button type="button" id="indicador_1"  class="boton-off"></button>
                 </span>
               </li>
 
@@ -30,13 +31,15 @@
 
                 <span class="mdl-list__item-primary-content list__item-text">Activar Alarma</span>
                 <span class="mdl-list__item-secondary-content">
-
                   <!-- SWITCH-->
                   <label class="switch">
-                    <input onchange="sw2_change()" type="checkbox" class ="actua" id="display_sw2">
+                    <input onchange="sw2_change()" type="checkbox" class="actua" id="display_sw2">
                     <span class="slider round"></span>
                   </label>
+                </span>
 
+                <span class="mdl-list__item-secondary-content">
+                  <button type="button" id="indicador_2" class="boton-off"></button>
                 </span>
               </li>
 
@@ -50,7 +53,9 @@
                     <input onchange="sw3_change()" type="checkbox" id="display_sw3" class="actua">
                     <span class="slider round"></span>
                   </label>
-
+                </span>
+                <span class="mdl-list__item-secondary-content">
+                  <button type="button" id="indicador_3" class="boton-off"></button>
                 </span>
               </li>
 
