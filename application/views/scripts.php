@@ -96,20 +96,27 @@
       $("#display_temp").html(temp);
 
       if (switch1 == "1") {
-        $("#display_sw1").prop('checked', true);
+        // $("#display_sw1").prop('checked', true);
+        $("#indicador_1").removeClass('boton-off').addClass('boton-on');
       } else {
-        $("#display_sw1").prop('checked', "");
+        // $("#display_sw1").prop('checked', "");
+        $("#indicador_1").removeClass('boton-on').addClass('boton-off');
       }
 
       if (switch2 == "1") {
-        $("#display_sw2").prop('checked', true);
+        // $("#display_sw2").prop('checked', true);
+        $("#indicador_2").removeClass('boton-off').addClass('boton-on');
+        alert("¡¡¡¡ Se ha activado la alarma !!! ");
       } else {
-        $("#display_sw2").prop('checked', "");
+        // $("#display_sw2").prop('checked', "");
+        $("#indicador_2").removeClass('boton-on').addClass('boton-off');
       }
       if (switch3 == "1") {
-        $("#display_sw3").prop('checked', true);
+        // $("#display_sw3").prop('checked', true);
+        $("#indicador_3").removeClass('boton-off').addClass('boton-on');
       } else {
-        $("#display_sw3").prop('checked', "");
+        // $("#display_sw3").prop('checked', "");
+        $("#indicador_3").removeClass('boton-on').addClass('boton-off');
       }
 
     }
@@ -137,19 +144,19 @@
       }
     }
     const data_act = {
-        "data_a" : data_[0],
-        "data_b" : data_[1],
-        "data_c" : data_[2],
-        "sn" : <?php echo $_SESSION['device_sn'] ?>
-      }
+      "data_a": data_[0],
+      "data_b": data_[1],
+      "data_c": data_[2],
+      "sn": <?php echo $_SESSION['device_sn'] ?>
+    }
     $.ajax({
       data: data_act,
-      url: '<?php echo base_url()."Insertdata/setData" ?>',
+      url: '<?php echo base_url() . "Insertdata/setData" ?>',
       type: 'POST',
       // beforeSend: function(){
       //   $(".enviando").html("Enviando requerimiento, espere por favor...");
       // },
-      success: function(response){
+      success: function(response) {
         // $(".enviando").html("response")
       }
     });
@@ -252,5 +259,47 @@
 
   .slider.round:before {
     border-radius: 50%;
+  }
+
+  .boton-off {
+    width: 30px;
+    height: 30px;
+    background-color: #FF7061;
+    margin: 5px;
+    padding: 10px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    font-size: 11px;
+    line-height: 32px;
+    text-transform: uppercase;
+    float: left;
+  }
+
+  .boton-on {
+    width: 30px;
+    height: 30px;
+    background-color: #2989FF;
+    margin: 5px;
+    padding: 10px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    font-size: 11px;
+    line-height: 32px;
+    text-transform: uppercase;
+    float: left;
+  }
+
+  .boton-off:hover {
+    opacity: 0.50;
+    -moz-opacity: .50;
+    filter: alpha (opacity=50);
+  }
+
+  .boton-off a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 5px 5px 0;
   }
 </style>
