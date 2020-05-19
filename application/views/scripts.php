@@ -264,7 +264,7 @@
   .boton-off {
     width: 30px;
     height: 30px;
-    background-color: #FF7061;
+    background-color: rgba(255, 112, 97, 0.25);
     margin: 5px;
     padding: 10px;
     -webkit-border-radius: 50px;
@@ -279,7 +279,7 @@
   .boton-on {
     width: 30px;
     height: 30px;
-    background-color: #2989FF;
+    background-color: #ff5252;
     margin: 5px;
     padding: 10px;
     -webkit-border-radius: 50px;
@@ -298,7 +298,7 @@
   }
 
   .boton-off a {
-    color: #fff;
+    color: #eee;
     text-decoration: none;
     padding: 5px 5px 5px 0;
   }
